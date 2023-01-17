@@ -19,7 +19,7 @@ public class BooleanSearchEngine implements SearchEngine {
 
     //(для этого можно использовать мапу, где ключом будет слово, а значением - искомый список).
 
-    public List<Object> BooleanSearchEngine(File pdfsDir) throws IOException {
+    public BooleanSearchEngine(File pdfsDir) throws IOException {
 
         if (pdfsDir.isDirectory()) {
             for (File files : pdfsDir.listFiles()) {
@@ -55,7 +55,6 @@ public class BooleanSearchEngine implements SearchEngine {
                 }
             }
         }
-        return null;
     }
 
     @Override
