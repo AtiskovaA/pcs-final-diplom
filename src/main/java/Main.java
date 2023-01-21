@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         BooleanSearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
 
-        try (ServerSocket serverSocket = new ServerSocket(9095)) { // стартуем сервер один(!) раз
+        try (ServerSocket serverSocket = new ServerSocket(8989)) { // стартуем сервер один(!) раз
             Gson gson = new Gson();
             System.out.println("Start");
 
